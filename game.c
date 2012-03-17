@@ -88,15 +88,8 @@
 #define DIRSEP "/"
 #endif
 
-#if defined __APPLE__
-#define SUPPORT_PATH "Library/Application Support/Beret/"
-#define RESOURCE_PATH "Beret.app/Contents/Resources/"
-#elif defined __WIN32__
-#define RESOURCE_PATH ""
-#else
+#define RESOURCE_PATH "/usr/share/beret/"
 #define SUPPORT_PATH ".beret/"
-#define RESOURCE_PATH ""
-#endif
 
 #define QUITMOD_WIN KMOD_ALT
 #define QUITKEY_WIN SDLK_F4
