@@ -3,12 +3,19 @@ Section: games
 Priority: extra
 Maintainer: Wouter Van Rooy <vanrooywouter@gmail.com>
 Build-Depends: debhelper (>= 8.0.0), libsdl-image1.2-dev, libsdl-mixer1.2-dev, libsdl-ttf2.0-dev, libsdl1.2-dev
+Homepage: http://kiwisauce.com/category/games/beret/
 Standards-Version: 3.9.3
 
-Homepage: http://kiwisauce.com/category/games/beret/
 Package: beret
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}, beret-data (= ${source:Version})
 Description: 2D puzzle platform game
+ Beret is a 2D puzzle-platformer game about a scientist.
+ He is trying to defeat his employers in 21 levels with his telekinesis.
+
+Package: beret-data
+Depends: ${misc:Depends}
+Architecture: all
+Description: data files for beret
  Beret is a 2D puzzle-platformer game about a scientist.
  He is trying to defeat his employers in 21 levels with his telekinesis.
