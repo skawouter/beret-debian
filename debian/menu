@@ -1,0 +1,3 @@
+?package(beret):needs="x11" section="Games/Action" \
+    title="Beret" command="/usr/games/beret" \
+    icon="/usr/share/pixmaps/beret-icon.xpm"
